@@ -1,0 +1,1288 @@
+@import "libs/reset.scss";
+@import "libs/mixins.scss";
+@import "libs/responsive.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+$green : #579c87;
+$yellow : #fdcb46;
+$fond-menu-1 : #fcdfdb;
+$fond-menu-2 : #fff5fe;
+$fond-menu-3 : #f9f9f9;
+$fond-menu-4 : #fdfffd;
+$color-menu-1 : #3c1218;
+$color-menu-2-a : #c77412;
+$color-menu-2-b : #905bfd;
+$color-menu-2-c : #a56799;
+$color-menu-2-d : #6e4ccc;
+$color-menu-3-a : #0431df;
+$color-menu-3-b : #0887fb;
+$color-menu-4-a : #72bf56;
+$color-menu-4-b : #bfff7e;
+$time-box : 0.4s;
+$opacity-box : 0.8;
+
+
+
+a{
+    text-decoration: none;
+    color : #fdcb46;
+}
+
+.menu-1{
+
+    h1{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+
+        @include medium{
+            font-size: 2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        @include small{
+            font-size: 1.6rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-1__full{
+        width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 130px;
+        padding: 5%;
+        background-color: $fond-menu-1;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+
+        @include medium{
+            width: 85%;
+        }
+
+        @include small{
+            width: 95%;
+            margin-bottom: 80px;
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+            line-height: 100%;
+            margin-bottom: 12%;
+            color: $color-menu-1;
+
+            @include medium{
+                font-size: 2.5rem;
+            }
+
+            @include small{
+                font-size: 2.2rem;
+            }
+        }
+
+        h2{
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            line-height: 100%;
+            margin-bottom: 25px;
+            color: $color-menu-1;
+
+            @include medium{
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            @include small{
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        .note-logo-position{
+            text-align: center;
+        }
+
+        .note-logo-size{
+            width: 120px;
+
+            @include medium{
+                width: 70px;
+            }
+
+            @include small{
+                width: 60px;
+            }
+        }
+        
+        .inline-footer{
+            margin-top: 12%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .inline-footer-img{
+            width: 70px;
+            margin-right: 15px;
+
+            @include medium{
+                width: 50px;
+            }
+
+            @include small{
+                width: 40px;
+            }
+        }
+
+        .menu-1__content{
+            margin: 8% 0;
+            font-family: 'Kalam', cursive;
+            font-size: 1rem;
+            color: $color-menu-1;
+
+            @include medium{
+                font-size: 0.95rem;
+            }
+
+            @include small{
+                font-size: 0.90rem;
+            }
+
+            .price{
+                font-size: 1.5rem;
+
+                @include medium{
+                    font-size: 1.2rem;
+                }
+
+                @include small{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .inline-img{
+                width: 30%;
+            }
+            
+            .inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 3%;;
+            }
+
+            h3{
+                font-family: 'Kalam', cursive;
+                font-size: 2rem;
+                color: $color-menu-1;
+                text-align: center;
+                background: linear-gradient(to top, $color-menu-1 0%, $color-menu-1 2px, transparent 2px) no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s;
+
+                &:hover{
+                    background-size: 100% 100%;
+                }
+
+                @include medium{
+                    font-size: 1.5rem;
+                }
+
+                @include small{
+                    font-size: 1.2rem;
+                }
+            }
+
+            .menu-1__content__item{
+                margin: 1.5% 0%;
+                display: flex;
+                justify-content: space-between;
+
+                @include small{
+                    margin: 20px 0%;;
+                }
+            }
+        }
+    }
+}
+
+.menu-2{
+
+    h1{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+
+        @include medium{
+            font-size: 2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        @include small{
+            font-size: 1.6rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-2__full{
+        width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 130px;
+        padding: 5%;
+        background-color: $fond-menu-2;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+
+        @include medium{
+            width: 85%;
+        }
+
+        @include small{
+            width: 95%;
+            margin-bottom: 80px;
+        }
+
+        .inline-img{
+            width: 30%;
+        }
+
+        h1{
+            font-family: 'Amita', cursive;
+            line-height: 100%;
+            font-size: 4rem;
+            margin-bottom: 25px;
+            background: -webkit-gradient(linear, right bottom, left top, from($color-menu-2-b), to($color-menu-2-a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            @include medium{
+                font-size: 2.5rem;
+            }
+
+            @include small{
+                font-size: 1.75rem;
+            }
+        }
+
+        .price{
+            font-size: 1.5rem;
+
+            @include medium{
+                font-size: 1.2rem;
+            }
+
+            @include small{
+                font-size: 1.1rem;
+            }
+        }
+
+        .menu-2__content--1{
+            margin: 8% 0;
+            font-family: 'Crete Round', serif;
+            font-size: 1rem;
+            line-height: 200%;
+            color: $color-menu-2-a;
+
+            @include medium{
+                font-size: 0.95rem;
+            }
+
+            @include small{
+                font-size: 0.90rem;
+                line-height: 140%;
+            }
+            
+            .inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5%;
+            }
+
+            h3{
+                font-family: 'Crete Round', serif;
+                line-height: 100%;
+                font-size: 2rem;
+                color: $color-menu-2-a;
+                text-align: center;
+                background: linear-gradient(to top, $color-menu-2-a 0%, $color-menu-2-a 2px, transparent 2px) no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s;
+
+                &:hover{
+                    background-size: 100% 100%;
+                }
+
+                @include medium{
+                    font-size: 1.1rem;
+                }
+
+                @include small{
+                    font-size: 1rem;
+                }
+            }
+
+            .menu-2__content__item{
+                margin: 1.5% 4%;
+                display: flex;
+                justify-content: space-between;
+
+                @include small{
+                    margin: 15px 4%;
+                }
+            }
+        }
+
+        .menu-2__content--2{
+            margin: 8% 0;
+            font-family: 'Crete Round', serif;
+            font-size: 1rem;
+            line-height: 200%;
+            color: $color-menu-2-c;
+
+            @include medium{
+                font-size: 0.95rem;
+            }
+
+            @include small{
+                font-size: 0.90rem;
+                line-height: 140%;
+            }
+            
+            .inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5%;
+            }
+
+
+            h3{
+                font-family: 'Crete Round', serif;
+                line-height: 100%;
+                font-size: 2rem;
+                color: $color-menu-2-c;
+                text-align: center;
+                background: linear-gradient(to top, $color-menu-2-c 0%, $color-menu-2-c 2px, transparent 2px) no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s;
+
+                &:hover{
+                    background-size: 100% 100%;
+                }
+
+                @include medium{
+                    font-size: 1.1rem;
+                }
+
+                @include small{
+                    font-size: 1rem;
+                }
+            }
+
+            .menu-2__content__item{
+                margin: 1.5% 4%;
+                display: flex;
+                justify-content: space-between;
+
+                @include small{
+                    margin: 15px 4%;
+                }
+            }
+        }
+
+        .menu-2__content--3{
+            margin: 8% 0;
+            font-family: 'Crete Round', serif;
+            font-size: 1rem;
+            line-height: 200%;
+            color: $color-menu-2-d;
+
+            @include medium{
+                font-size: 0.95rem;
+            }
+
+            @include small{
+                font-size: 0.90rem;
+                line-height: 140%;
+            }
+            
+            .inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5%;
+            }
+
+            h3{
+                font-family: 'Crete Round', serif;
+                line-height: 100%;
+                font-size: 2rem;
+                color: $color-menu-2-d;
+                text-align: center;
+                background: linear-gradient(to top, $color-menu-2-d 0%, $color-menu-2-d 2px, transparent 2px) no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s;
+
+                &:hover{
+                    background-size: 100% 100%;
+                }
+
+                @include medium{
+                    font-size: 1.1rem;
+                }
+
+                @include small{
+                    font-size: 1rem;
+                }
+            }
+
+            .menu-2__content__item{
+                margin: 1.5% 4%;
+                display: flex;
+                justify-content: space-between;
+
+                @include small{
+                    margin: 15px 4%;
+                }
+            }
+        }
+    }
+}
+
+.menu-3{
+    
+    h1{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+
+        @include medium{
+            font-size: 2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        @include small{
+            font-size: 1.6rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-3__full{
+        width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 130px;
+        padding: 5%;
+        background-color: $fond-menu-3;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+
+        @include medium{
+            width: 85%;
+        }
+
+        @include small{
+            margin-bottom: 80px;
+            width: 95%;
+        }
+
+        .inline-img{
+            width: 30%;
+        }
+
+        h1{
+            font-family: 'Dancing Script', cursive;
+            line-height: 130%;
+            font-size: 4rem;
+            margin-bottom: 25px;
+            background: -webkit-gradient(linear, right bottom, left top, from($color-menu-3-b), to($color-menu-3-a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include medium{
+                font-size: 2.5rem;
+            }
+
+            @include medium{
+                font-size: 2.1rem;
+            }
+        }
+
+        .menu-3__content{
+            margin: 8% 0;
+            font-family: 'Kalam', cursive;
+            font-size: 1rem;
+            line-height: 200%;
+            color: black;
+
+            @include medium{
+                font-size: 0.95rem;
+            }
+
+            @include small{
+                font-size: 0.90rem;
+            }
+            
+            .price{
+                font-size: 1.5rem;
+
+                @include medium{
+                    font-size: 1.1rem;
+                }
+
+                @include small{
+                    font-size: 1rem;
+                }
+            }
+
+            .inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 3%;;
+            }
+
+            h3{
+                font-family: 'Kalam', cursive;
+                line-height: 100%;
+                font-size: 1.3rem;
+                color: black;
+                text-align: center;
+                background: linear-gradient(to top, black 0%, black 2px, transparent 2px) no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s;
+
+                &:hover{
+                    background-size: 100% 100%;
+                }
+
+                @include medium{
+                    font-size: 1.2rem;
+                }
+
+                @include small{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .menu-3__content__item{
+                margin: 1.5% 4%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.menu-4{
+
+    h1{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+
+        @include medium{
+            font-size: 2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        @include small{
+            font-size: 1.6rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-4__full{
+        width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 130px;
+        padding: 5%;
+        background-color: $fond-menu-4;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+
+        @include medium{
+            width: 85%;
+        }
+
+        @include small{
+            width: 95%;
+            margin-bottom: 80px;
+        }
+
+        .inline-img{
+            width: 30%;
+        }
+
+        h1{
+            font-family: 'Kaushan Script', cursive;
+            line-height: 140%;
+            font-size: 4rem;
+            margin-bottom: 25px;
+            background: -webkit-gradient(linear, right bottom, left top, from($color-menu-4-b), to($color-menu-4-a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include medium{
+                font-size: 2.5rem;
+            }
+
+            @include small{
+                font-size: 2.3rem;
+            }
+        }
+
+        .menu-4__content{
+            margin: 8% 0;
+            font-family: 'Kalam', cursive;
+            font-size: 1rem;
+            line-height: 200%;
+            color: black;
+
+            @include medium{
+                font-size: 0.95rem;
+            }
+
+            @include small{
+                font-size: 0.90rem;
+            }
+            
+            .inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 3%;;
+            }
+
+            .price{
+                font-size: 1.5rem;
+
+                @include medium{
+                    font-size: 1.1rem;
+                }
+
+                @include small{
+                    font-size: 1rem;
+                }
+            }
+
+            h3{
+                font-family: 'Kalam', cursive;
+                line-height: 100%;
+                font-size: 1.3rem;
+                color: black;
+                text-align: center;
+                background: linear-gradient(to top, black 0%, black 2px, transparent 2px) no-repeat;
+                background-size: 0 100%;
+                transition: background-size .4s;
+
+                &:hover{
+                    background-size: 100% 100%;
+                }
+
+                @include medium{
+                    font-size: 1.2rem;
+                }
+
+                @include small{
+                    font-size: 1.2rem;
+                }
+            }
+
+            .menu-4__content__item{
+                margin: 1.5% 4%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+header{
+    background-color: $green;
+    width: 100%;
+}
+
+.header__image--position{
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 0;
+    margin-left: 4%;
+    margin-right: 4%;
+
+    .header__image--size{
+        width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 10px 0;
+
+        @include medium{
+            width:200px;
+        }
+
+        @include small{
+            width:180px;
+        }
+    }
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+
+    @include medium{
+        margin: 6%;
+    }
+
+    @include small{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box__menu{
+        width: 350px;
+        height: 500px;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: 0px 0px 10px rgb(211, 211, 211);
+        display: table;
+        text-decoration: none;
+
+        @include medium{
+            width: 250px;
+            height: 330px;
+            margin-right: 3%;
+            margin-left: 3%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        @include small{
+            width: 300px;
+            height: 380px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 33.3px;
+            margin-bottom: 11.1px;
+        }
+
+        .box__menu__content{
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+
+    .box__menu-1{
+        background-color: $fond-menu-1;
+        transition: $time-box;
+            
+        &:hover{
+            opacity: $opacity-box;
+            transition: $time-box;
+
+            .note-logo-size{
+                width: 70px;
+                transition: $time-box;
+                opacity: $opacity-box;
+
+                @include medium{
+                     width: 55px;
+                }
+    
+                @include small{
+                    width: 70px;
+                }
+            }
+
+            .box__menu-1__title{
+                font-family: 'Pacifico', cursive;
+                font-size: 1.9rem;
+                line-height: 100%;
+                margin-bottom: 25px;
+                color: $color-menu-1;
+                opacity: $opacity-box;
+                transition: $time-box;
+
+                @include medium{
+                    font-size: 1.7rem;
+                }
+    
+                @include small{
+                    font-size: 1.9rem;
+                }
+            }
+    
+            .box__menu-1__subtitle{
+                font-family: 'Kalam', cursive;
+                line-height: 100%;
+                font-size: 2.5rem;
+                color: $color-menu-1;
+                opacity: $opacity-box;
+                transition: $time-box;
+
+                @include medium{
+                    font-size: 2.2rem;
+                }
+    
+                @include small{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .note-logo-position{
+            text-align: center;
+        }
+
+        .note-logo-size{
+            width: 60px;
+            transition: $time-box;
+
+            @include medium{
+                width: 45px;
+            }
+
+            @include small{
+                width: 60px;
+            }
+        }
+
+        .box__menu-1__title{
+            font-family: 'Pacifico', cursive;
+            font-size: 1.7rem;
+            line-height: 100%;
+            margin-bottom: 25px;
+            color: $color-menu-1;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 1.5rem;
+            }
+
+            @include small{
+                font-size: 1.7rem;
+            }
+        }
+
+        .box__menu-1__subtitle{
+            font-family: 'Kalam', cursive;
+            line-height: 100%;
+            font-size: 2.3rem;
+            color: $color-menu-1;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 2rem;
+            }
+
+            @include small{
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    .box__menu-2{
+        background-color: $fond-menu-2;
+        transition: $time-box;
+            
+        &:hover{
+            opacity: $opacity-box;
+            transition: $time-box;
+
+            .box__menu-2__title{
+                font-family: 'Amita', cursive;
+                line-height: 100%;
+                font-size: 1.7rem;
+                margin-bottom: 25px;
+                background: -webkit-gradient(linear, right bottom, left top, from($color-menu-2-b), to($color-menu-2-a));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: $opacity-box;
+                transition: $time-box;
+    
+                @include medium{
+                    font-size: 1.4rem;
+                }
+
+                @include small{
+                    font-size: 1.7rem;
+                }
+            }
+    
+            .box__menu-2__subtitle{
+                font-family: 'Crete Round', serif;
+                line-height: 100%;
+                font-size: 2.4rem;
+                color: $color-menu-2-a;
+                opacity: $opacity-box;
+                transition: $time-box;
+    
+                @include medium{
+                    font-size: 2.2rem;
+                }
+    
+                @include small{
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+        .box__menu-2__title{
+            font-family: 'Amita', cursive;
+            line-height: 100%;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            background: -webkit-gradient(linear, right bottom, left top, from($color-menu-2-b), to($color-menu-2-a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 1.2rem;
+            }
+
+            @include small{
+                font-size: 1.5rem;
+            }
+        }
+
+        .box__menu-2__subtitle{
+            font-family: 'Crete Round', serif;
+            line-height: 100%;
+            font-size: 2.2rem;
+            color: $color-menu-2-a;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 2rem;
+            }
+
+            @include small{
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    .box__menu-3{
+        background-color: $fond-menu-3;
+            
+        &:hover{
+            opacity: $opacity-box;
+            transition: $time-box;
+
+            .box__menu-3__title{
+                font-family: 'Dancing Script', cursive;
+                line-height: 100%;
+                font-size: 2.2rem;
+                margin-bottom: 25px;
+                background: -webkit-gradient(linear, right bottom, left top, from($color-menu-3-b), to($color-menu-3-a));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: $opacity-box;
+                transition: $time-box;
+    
+                @include medium{
+                    font-size: 1.8rem;
+                }
+    
+                @include small{
+                    font-size: 2.2rem;
+                }
+            }
+    
+            .box__menu-3__subtitle{
+                font-family: 'Kalam', cursive;
+                line-height: 100%;
+                font-size: 2.5rem;
+                color: $color-menu-3-b;
+                opacity: $opacity-box;
+                transition: $time-box;
+    
+                @include medium{
+                    font-size: 2.2rem;
+                }
+    
+                @include small{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .box__menu-3__title{
+            font-family: 'Dancing Script', cursive;
+            line-height: 100%;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            background: -webkit-gradient(linear, right bottom, left top, from($color-menu-3-b), to($color-menu-3-a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 1.6rem;
+            }
+
+            @include small{
+                font-size: 2rem;
+            }
+        }
+
+        .box__menu-3__subtitle{
+            font-family: 'Kalam', cursive;
+            line-height: 100%;
+            font-size: 2.3rem;
+            color: $color-menu-3-b;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 2rem;
+            }
+
+            @include small{
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    .box__menu-4{
+        background-color: $fond-menu-4;
+
+        &:hover{
+            opacity: $opacity-box;
+            transition: $time-box;
+
+            .box__menu-4__title{
+                font-family: 'Kaushan Script', cursive;
+                line-height: 100%;
+                font-size: 2.2rem;
+                margin-bottom: 25px;
+                background: -webkit-gradient(linear, right bottom, left top, from($color-menu-4-b), to($color-menu-4-a));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: $opacity-box;
+                transition: $time-box;
+    
+                @include medium{
+                    font-size: 1.7rem;
+                }
+    
+                @include small{
+                    font-size: 2.2rem;
+                }
+            }
+    
+            .box__menu-4__subtitle{
+                font-family: 'Kalam', cursive;
+                line-height: 100%;
+                font-size: 2.5rem;
+                color: $color-menu-4-a;
+    
+                @include medium{
+                    font-size: 2.2rem;
+                }
+    
+                @include small{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .box__menu-4__title{
+            font-family: 'Kaushan Script', cursive;
+            line-height: 100%;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            background: -webkit-gradient(linear, right bottom, left top, from($color-menu-4-b), to($color-menu-4-a));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 1.5rem;
+            }
+
+            @include small{
+                font-size: 2rem;
+            }
+        }
+
+        .box__menu-4__subtitle{
+            font-family: 'Kalam', cursive;
+            line-height: 100%;
+            font-size: 2.3rem;
+            color: $color-menu-4-a;
+            transition: $time-box;
+
+            @include medium{
+                font-size: 2rem;
+            }
+
+            @include small{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+
+.section-btn{
+    text-align: center;
+    margin-bottom: 110px;
+
+    @include small{
+        margin-bottom: 90px;
+    }
+
+    .section-btn__prochainement{
+        background-color: $green;
+        padding-top: 10px;
+        padding-bottom: 15px; ;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 330px;
+        border-radius: 15px;
+        margin: auto;
+        font-size: 1.8rem;
+        color: $yellow;
+        font-family: 'Open Sans', sans-serif;
+
+        @include medium{
+            padding-top: 5px;
+            padding-bottom: 8px; ;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 280px;
+            font-size: 1.5rem;
+        }
+
+        @include small{
+            padding-top: 5px;
+            padding-bottom: 8px; ;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 30px;
+            width: 280px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.loading{
+
+    span{
+        width: 8px;
+        height: 8px;
+        margin: 0 0;
+        border-radius: 50%;
+        background-color: $yellow;
+        display: inline-block;
+        animation-name: jumping-dots;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        &:nth-child(2){
+            animation-delay: 0.4s;
+        }
+
+        &:nth-child(3){
+            animation-delay: 0.8s;
+        }
+    }
+}
+
+@keyframes jumping-dots{
+    
+    10%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+}
+
+.shake{
+
+    &:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    }
+}
+
+@keyframes shake{
+
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(1px, 1px) rotate(-1deg); }
+    20% { transform: translate(-1px, 0px) rotate(1deg); }
+    30% { transform: translate(1px, 1px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 1px) rotate(-1deg); }
+    60% { transform: translate(-1px, 1px) rotate(0deg); }
+    70% { transform: translate(1px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 1px) rotate(0deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+}
+
+footer{
+    background-color: $green;
+    display: flex;
+    justify-content: space-between;
+    color: $yellow;
+    font-size: 1.4rem;
+    line-height: 240%;
+    padding: 0.4% 2%;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    right:0;
+    left:0;
+    bottom:0;
+
+    @include medium{  
+        font-size: 1.2rem;
+    }
+
+    @include small{  
+        font-size: 1.1rem;
+    }
+}
